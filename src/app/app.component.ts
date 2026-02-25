@@ -13,24 +13,42 @@ export class AppComponent {
     // user1 = "samu";
     // user2 = "samu"
 
-    handleClickEvent(){
-      console.log("Function called");
-      this.OtherFunCall();
+    // handleClickEvent(){
+    //   console.log("Function called");
+    //   this.OtherFunCall();
+    // }
+
+    // OtherFunCall(){
+    //   console.log("Other Function called");
+    // }
+
+    // name:string = "Harshad"
+    // data:any= "2005"
+    // age : string|number = 21
+
+    // UpdateName(){
+    //   this.name = "samu"
+    //   this.data = 2008
+    //   this.age = 17
+    //   console.log(this.name,this.data,this.age);
+    // }
+
+
+    // Counter application 
+    count = 0;
+
+    handleDecrement(){
+      if(this.count > 0){
+        this.count = this.count-1;
+      }
     }
 
-    OtherFunCall(){
-      console.log("Other Function called");
+    handleIncrement(){
+      this.count = this.count+1;
     }
 
-    name:string = "Harshad"
-    data:any= "2005"
-    age : string|number = 21
-
-    UpdateName(){
-      this.name = "samu"
-      this.data = 2008
-      this.age = 17
-      console.log(this.name,this.data,this.age);
+    handleReset(){
+      this.count = 0;
     }
 
 }
