@@ -23,7 +23,7 @@
 
 
 <!-- Events in Angular -->
-<h1> Event in Angular</h1>
+<!-- <h1> Event in Angular</h1>
 <button class="btn" name="btn-name" (click)="handleEvent($event)">Click Event</button>
 
 <br>
@@ -42,7 +42,21 @@
 (focus)="handleEvent($event)" 
 (blur)="handleEvent($event)" 
 (input)="handleEvent($event)" 
-name="user">
+name="user"> -->
 
 
+<!-- Get and Set Input field Values -->
+<h2>Get and Set Input field value</h2>
+<h3>User Name is : {{disName}}</h3>
+<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter User name">
+<br>
+<br>
+<button (click)="displayName()">Get Value</button>
+<br>
+<button (click)="SetName()">Set Name</button>
+<br>
+
+<input type="text" value="{{email}}" placeholder="enter email" #emailfield>
+<button (click)="getEmail(emailfield.value)">Get Email</button>
+<button (click)="setEmail()">Set Email</button>
 

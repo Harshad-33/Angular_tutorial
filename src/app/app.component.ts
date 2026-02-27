@@ -53,9 +53,37 @@ export class AppComponent {
 
 
     // //Events in Angular
-    handleEvent(event:Event){
-      console.log("event function called",event.type);
-      //console.log("value",(event.target as HTMLInputElement).value);
+    // handleEvent(event:Event){
+    //   console.log("event function called",event.type);
+    //   //console.log("value",(event.target as HTMLInputElement).value);
+    // }
+
+
+    // Get and Set 
+    name = ""
+    disName = ""
+    email = ""
+    getName(event : Event){
+      const name = (event.target as HTMLInputElement).value;
+      console.log(name);
+      this.name = name;
+    }
+
+    displayName(){
+      this.disName = this.name;
+    }
+
+    SetName(){
+      this.name = "samu"
+    }
+
+    getEmail(val : string){
+      console.log(val)
+      this.email = val;
+    }
+
+    setEmail(){
+      this.email="default@gmail.com"
     }
 
 }
