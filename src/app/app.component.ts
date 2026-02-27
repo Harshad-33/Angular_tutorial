@@ -34,21 +34,28 @@ export class AppComponent {
     // }
 
 
-    // Counter application 
-    count = 0;
+    // // Counter application 
+    // count = 0;
 
-    handleDecrement(){
-      if(this.count > 0){
-        this.count = this.count-1;
-      }
-    }
+    // handleDecrement(){
+    //   if(this.count > 0){
+    //     this.count = this.count-1;
+    //   }
+    // }
 
-    handleIncrement(){
-      this.count = this.count+1;
-    }
+    // handleIncrement(){
+    //   this.count = this.count+1;
+    // }
 
-    handleReset(){
-      this.count = 0;
+    // handleReset(){
+    //   this.count = 0;
+    // }
+
+
+    // //Events in Angular
+    handleEvent(event:Event){
+      console.log("event function called",event.type);
+      //console.log("value",(event.target as HTMLInputElement).value);
     }
 
 }
