@@ -63,9 +63,43 @@ name="user"> -->
 
 
 <!-- Style Options [2:18:15] -->
-
-<h2>Style Options</h2>
+<!-- <h2>Style Options</h2>
 <app-profile>
-</app-profile>
+</app-profile> -->
 
+
+<!-- Control flow statement in Angualr[2:31:14] -->
+<h2>IF Else in Angular | Hide Show | Toggle</h2>
+
+
+<div style="color: aquamarine; border: 10px; border-color: black; padding: 10px;">
+    <button (click)="hide()">Hide view</button>
+    <button (click)="show()">Show view</button>
+    <button (click)="toggle()">Toggle</button>
+</div>
+
+
+@if(display){
+    <div style="width: 200px; height: 200px; background-color: green;">
+    
+    </div>
+}
+
+<hr>
+
+<h3>Toggle two divs</h3>
+<div style="color: aquamarine; border: 10px; border-color: black; padding: 10px;">
+    <button (click)="toggletwodiv()">Toggle div</button>
+</div>
+
+@if(toggletwo){
+    <div style="width: 200px; height: 200px; background-color: rgb(128, 41, 0);">
+    
+    </div>
+}
+@else{
+    <div style="width: 200px; height: 200px; background-color: rgb(192, 253, 11);">
+    
+    </div>
+}
 

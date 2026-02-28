@@ -88,6 +88,26 @@ export class AppComponent {
     // }
 
 
+    // Control flow statement in Angualr[2:31:14]
+    display = true;
+    x = 10;
+
+    hide(){
+      this.display = false;
+    }
+
+    show(){
+      this.display = true;
+    }
+
+    toggle(){
+      this.display = !this.display;
+    }
+    
+    toggletwo = true;
+    toggletwodiv(){
+      this.toggletwo = !this.toggletwo;
+    }
 
 
 }
