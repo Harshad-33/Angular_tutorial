@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet , LoginComponent],
+  imports: [RouterOutlet , LoginComponent , ProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -60,31 +61,34 @@ export class AppComponent {
 
 
     // Get and Set 
-    name = ""
-    disName = ""
-    email = ""
-    getName(event : Event){
-      const name = (event.target as HTMLInputElement).value;
-      console.log(name);
-      this.name = name;
-    }
+    // name = ""
+    // disName = ""
+    // email = ""
+    // getName(event : Event){
+    //   const name = (event.target as HTMLInputElement).value;
+    //   console.log(name);
+    //   this.name = name;
+    // }
 
-    displayName(){
-      this.disName = this.name;
-    }
+    // displayName(){
+    //   this.disName = this.name;
+    // }
 
-    SetName(){
-      this.name = "samu"
-    }
+    // SetName(){
+    //   this.name = "samu"
+    // }
 
-    getEmail(val : string){
-      console.log(val)
-      this.email = val;
-    }
+    // getEmail(val : string){
+    //   console.log(val)
+    //   this.email = val;
+    // }
 
-    setEmail(){
-      this.email="default@gmail.com"
-    }
+    // setEmail(){
+    //   this.email="default@gmail.com"
+    // }
+
+
+
 
 }
 
