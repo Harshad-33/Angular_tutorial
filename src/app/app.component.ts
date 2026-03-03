@@ -89,25 +89,48 @@ export class AppComponent {
 
 
     // Control flow statement in Angualr[2:31:14]
-    display = true;
-    x = 10;
+    // display = true;
+    // x = 10;
 
-    hide(){
-      this.display = false;
-    }
+    // hide(){
+    //   this.display = false;
+    // }
 
-    show(){
-      this.display = true;
-    }
+    // show(){
+    //   this.display = true;
+    // }
 
-    toggle(){
-      this.display = !this.display;
-    }
+    // toggle(){
+    //   this.display = !this.display;
+    // }
     
-    toggletwo = true;
-    toggletwodiv(){
-      this.toggletwo = !this.toggletwo;
-    }
+    // toggletwo = true;
+    // toggletwodiv(){
+    //   this.toggletwo = !this.toggletwo;
+    // }
+
+
+    // Else if control Flow statement
+    // color = 5;
+
+    // handleColor(val:number){
+    //   this.color = val;
+    // }
+
+    // handleInput(event:Event){
+    //   this.color = parseInt((event.target as HTMLInputElement).value);
+    // }
+
+
+    // Switch Case in Angular
+    // color = 'green';
+
+    // handleColor(val:string){
+    //   this.color = val;
+    // }
+    // changeColor(event:Event){
+    //   this.color = (event.target as HTMLInputElement).value;
+    // }
 
 
 }

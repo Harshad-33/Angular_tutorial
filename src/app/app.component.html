@@ -1,5 +1,6 @@
 <h1>Hello Angular 19</h1>
-
+<br>
+<br>
 <!-- <h1>Function call on Button Click</h1>
 <button (click)="handleClickEvent()">Click Me</button>
 <br>
@@ -69,7 +70,7 @@ name="user"> -->
 
 
 <!-- Control flow statement in Angualr[2:31:14] -->
-<h2>IF Else in Angular | Hide Show | Toggle</h2>
+<!-- <h2>IF Else in Angular | Hide Show | Toggle</h2>
 
 
 <div style="color: aquamarine; border: 10px; border-color: black; padding: 10px;">
@@ -101,5 +102,53 @@ name="user"> -->
     <div style="width: 200px; height: 200px; background-color: rgb(192, 253, 11);">
     
     </div>
+} -->
+
+<!-- Else if Condition | control flow statement -->
+<!-- <h2>Else if | Conditional flow</h2>
+<button (click)="handleColor(1)">Red</button>
+<button (click)="handleColor(2)">Yellow</button>
+<button (click)="handleColor(3)">Green</button>
+<button (click)="handleColor(4)">Other</button>
+<input type="text" (input)="handleInput($event)" placeholder="Enter Color number">
+
+@if(color == 1){
+    <div style="background-color: red; width: 100px; height: 100px;"></div>
 }
+@else if(color == 2){
+    <div style="background-color: rgb(238, 255, 0); width: 100px; height: 100px;"></div>
+}
+@else if(color == 3){
+    <div style="background-color: rgb(30, 232, 11); width: 100px; height: 100px;"></div>
+}
+@else {
+    <div style="background-color: rgb(0, 0, 0); width: 100px; height: 100px;"></div>
+} -->
+
+
+<!-- Switch Case in Angular -->
+<!-- <h2>Switch Case</h2>
+
+<button (click)="handleColor('red')">Red color</button>
+<button (click)="handleColor('green')">Green color</button>
+<button (click)="handleColor('yellow')">Yellow color</button>
+<button (click)="handleColor('other')">Other</button>
+<input type="text" placeholder="Enter Color" (input)="changeColor($event)">
+
+@switch(color){
+    @case('red'){
+        <h2 style="background-color: red;">Red Color</h2>
+    }
+    @case('green'){
+        <h2 style="background-color: green;">Green Color</h2>
+    }
+    @case('yellow'){
+        <h2 style="background-color: yellow;">Yellow Color</h2>
+    }
+    @default{
+        <h1 style="background-color: black; color: white;">No Color Match..</h1>
+    }
+} -->
+
+
 
