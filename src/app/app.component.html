@@ -152,3 +152,24 @@ name="user"> -->
 
 
 
+<!-- for loop in Angular -->
+<h2>FOR loop in Angular</h2>
+
+@for(item of users;track item){
+    <h2>{{item}}</h2>
+}
+
+<hr>
+
+@for(student of students;track student.name){
+    <h2>
+        <span>{{student.name}}</span>
+        <span>{{student.age}}</span>
+        <span>{{student.email}}</span>
+        <button (click)="getName(student.name)">Get name</button>
+    </h2>
+}
+
+
+
+

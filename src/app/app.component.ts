@@ -2,6 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
+import { email } from '@angular/forms/signals';
 
 @Component({
   selector: 'app-root',
@@ -132,6 +133,22 @@ export class AppComponent {
     //   this.color = (event.target as HTMLInputElement).value;
     // }
 
+
+
+    // For loop in Angular
+    users = ["Harshad","Samiksha","alien","Ram"];
+
+    students = [
+      {name : 'samu ',age:17,email:' samu@123'},
+      {name : 'alien ',age:17,email:' alien@123'},
+      {name : 'harsh ',age:21,email:' harsh@123'},
+      {name : 'ram ',age:21,email:' ram@123'},
+    ]
+
+
+    getName(name:string){
+      console.log(name);
+    }
 
 }
 
