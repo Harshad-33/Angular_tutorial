@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -136,19 +136,37 @@ export class AppComponent {
 
 
     // For loop in Angular
-    users = ["Harshad","Samiksha","alien","Ram"];
+    // users = ["Harshad","Samiksha","alien","Ram"];
 
-    students = [
-      {name : 'samu ',age:17,email:' samu@123'},
-      {name : 'alien ',age:17,email:' alien@123'},
-      {name : 'harsh ',age:21,email:' harsh@123'},
-      {name : 'ram ',age:21,email:' ram@123'},
-    ]
+    // students = [
+    //   {name : 'samu ',age:17,email:' samu@123'},
+    //   {name : 'alien ',age:17,email:' alien@123'},
+    //   {name : 'harsh ',age:21,email:' harsh@123'},
+    //   {name : 'ram ',age:21,email:' ram@123'},
+    // ]
+
+    // getName(name:string){
+    //   console.log(name);
+    // }
 
 
-    getName(name:string){
-      console.log(name);
+    
+
+    // signals in Angular
+    count = signal(10);
+    x=20;
+
+    constructor(){
+      effect(()=>{
+        console.log(this.count());
+      })
     }
+
+    updateValue(){
+      this.count.set(this.count()+1);
+      this.x = 100;
+    }
+
 
 }
 
