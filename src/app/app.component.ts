@@ -1,8 +1,9 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, computed, effect, Signal, signal, WritableSignal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './profile/profile.component';
 import { email } from '@angular/forms/signals';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -153,20 +154,43 @@ export class AppComponent {
     
 
     // signals in Angular
-    count = signal(10);
-    x=20;
+    // count = signal(10);
+    // x=20;
 
-    constructor(){
-      effect(()=>{
-        console.log(this.count());
-      })
-    }
+    // constructor(){
+    //   effect(()=>{
+    //     console.log(this.count());
+    //   })
+    // }
 
-    updateValue(){
-      this.count.set(this.count()+1);
-      this.x = 100;
-    }
+    // updateValue(){
+    //   this.count.set(this.count()+1);
+    //   this.x = 100;
+    // }
 
+
+
+    // Data types with signals
+    // data : WritableSignal<Number | string> = signal(50);
+    // count : Signal<number> = computed(()=>100); // can't update.
+    // updateSignal(){
+    //   this.data.set("samu"); // using set method
+    //   // this.data.update((val)=>val+1); // only for single value datatype.
+    // }
+
+
+    //Computed Signals
+    // x = signal(10);
+    // y = signal(20);
+    // z = computed(()=> this.x() + this.y());
+
+    // showValue(){
+    //   console.log(this.z());
+    //   this.x.set(100);
+    //   console.log(this.z()); // now z will be update with addtion of x=100
+    // }
+
+    
 
 }
 
