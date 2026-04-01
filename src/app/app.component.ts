@@ -174,7 +174,7 @@ export class AppComponent {
     // data : WritableSignal<Number | string> = signal(50);
     // count : Signal<number> = computed(()=>100); // can't update.
     // updateSignal(){
-    //   this.data.set("samu"); // using set method
+    //   this.data.set("Harshad"); // using set method
     //   // this.data.update((val)=>val+1); // only for single value datatype.
     // }
 
@@ -191,8 +191,31 @@ export class AppComponent {
     // }
 
     
+    // Effect in Angular
+    userName = signal('Harshad') 
+    count = signal(0)
+    displayHeading = signal(true);
 
+    constructor(){
+      effect(()=>{
+        if(this.count()==2){
+          this.displayHeading.set(true);
+          setTimeout(()=>{
+            this.displayHeading.set(false)
+          },2000)
+        }else{
+          this.displayHeading.set(false);
+        }
+      })
+    }
+
+    toggleValue(){
+      this.count.set(this.count()+1);
+    }
 }
 
+
+
+//For loop contextual Variable
 
 
